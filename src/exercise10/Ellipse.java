@@ -40,7 +40,8 @@ public class Ellipse extends Figure {
         return false;
         }
     }
-    
+
+    @Override
     public boolean containsClick(Point click) {
         // Check if click point is inside the rectangle
 
@@ -51,8 +52,8 @@ public class Ellipse extends Figure {
       double centerX = startX + side1;
       double centerY = startY + side2;
 
-      double part1 = Math.pow(Simox - centerX, 2) / side1 * side1;
-      double part2 = Math.pow(Simoy - centerY, 2) / side2 * side2;
+      double part1 = Math.pow(Simox - centerX, 2) / Math.pow(side1, 2);
+      double part2 = Math.pow(Simoy - centerY, 2) / Math.pow(side2, 2);
 
       return part1 + part2 <= 1;
         
