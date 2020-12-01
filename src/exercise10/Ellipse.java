@@ -16,12 +16,7 @@ public class Ellipse extends Figure {
     public Ellipse(Ellipse otherEllipse) {
         super(otherEllipse.startPoint, otherEllipse.side1, otherEllipse.side2);
 
-    }
-
-    
-    
-
-    
+    }    
     
     @Override
     public double calculatePerimeter() {
