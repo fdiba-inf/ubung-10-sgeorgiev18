@@ -40,6 +40,14 @@ public class Rectangle extends Figure {
     @Override
     public boolean containsClick(Point click) {
         // Check if click point is inside the rectangle
-        return false;
+      double Simox = click.getX();
+      double Simoy = click.getY();
+      double startX = click.getX();
+      double startY = click.getY();
+
+      boolean insideX = startX < Simox && Simox < startX + side2;
+      boolean insideY = startY < Simoy && Simoy < startY + side1; 
+
+        return insideX && insideY;
     }
 }
