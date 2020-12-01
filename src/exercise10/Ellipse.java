@@ -43,7 +43,7 @@ public class Ellipse extends Figure {
 
     @Override
     public boolean containsClick(Point click) {
-        // Check if click point is inside the rectangle
+        
 
       double Simox = click.getX();
       double Simoy = click.getY();
